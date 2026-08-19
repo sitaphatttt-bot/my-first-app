@@ -1,4 +1,3 @@
-import streamlit as st
 import time
 import streamlit as st
 
@@ -59,7 +58,7 @@ def show_result_dialog(ans1, ans2, ans3, ans4):
         st.error(f"❌ ข้อ 3: ยังไม่ถูกต้อง (คุณตอบ '{u_ans3}')")
 
         # ตรวจข้อ 4
-    if u_ans4 == "":
+    if u_ans4 == "books":
         st.success("✅ ข้อ 4: ถูกต้อง")
         score += 1
     else:
@@ -105,7 +104,7 @@ ans3 = st.text_input(
     value=st.session_state.ans3_val,
 )
 ans4 = st.text_input(
-    "ข้อ 4: When we went to school we always bringing a lot of `B _ _ k s`. 📚",
+    "ข้อ 4: When we went to school we always bringing a lot of `b _ _ k s`. 📚",
     value=st.session_state.ans4_val,
 )
 # อัปเดตค่าล่าสุดเข้าตัวแปร
