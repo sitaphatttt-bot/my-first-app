@@ -40,34 +40,34 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5):
     u_ans4 = ans4.strip().lower()
     u_ans5 = ans5.strip().lower()
     # ตรวจข้อ 1
-    if u_ans1 == "apple":
+    if u_ans1 == "triangle":
         st.success("✅ ข้อ 1: ถูกต้อง")
         score += 1
     else:
         st.error(f"❌ ข้อ 1: ยังไม่ถูกต้อง (คุณตอบ '{u_ans1}')")
 
     # ตรวจข้อ 2
-    if u_ans2 == "fish":
+    if u_ans2 == "circle":
         st.success("✅ ข้อ 2: ถูกต้อง")
         score += 1
     else:
         st.error(f"❌ ข้อ 2: ยังไม่ถูกต้อง (คุณตอบ '{u_ans2}')")
 
      # ตรวจข้อ 3
-    if u_ans3 == "milk":
+    if u_ans3 == "square":
         st.success("✅ ข้อ 3: ถูกต้อง")
         score += 1
     else:
         st.error(f"❌ ข้อ 3: ยังไม่ถูกต้อง (คุณตอบ '{u_ans3}')")
 
         # ตรวจข้อ 4
-    if u_ans4 == "books":
+    if u_ans4 == "heart":
         st.success("✅ ข้อ 4: ถูกต้อง")
         score += 1
     else:
         st.error(f"❌ ข้อ 4: ยังไม่ถูกต้อง (คุณตอบ '{u_ans4}')")
   # ตรวจข้อ 5
-    if u_ans5 == "books":
+    if u_ans5 == "dimon":
         st.success("✅ ข้อ 5: ถูกต้อง")
         score += 1
     else:
