@@ -102,7 +102,7 @@ st.divider()
 
 # 3. ช่องรับคำตอบ (ใช้ value ผูกกับตัวแปรตรงๆ เพื่อสั่งเคลียร์ได้)
 ans1 = st.text_input(
-    "ข้อ 1: when we foldinding the paper top and bottom corners of the opposite side meet what shape will we get `t r i____e` . 🔺",
+    "ข้อ 1: when we foldinding the paper from top and bottom corners of the opposite side meet what shape will we get `t r i____e` . 🔺",
     value=st.session_state.ans1_val,
 )
 ans2 = st.text_input(
