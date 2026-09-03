@@ -61,13 +61,13 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5):
         st.error(f"❌ ข้อ 3: ยังไม่ถูกต้อง (คุณตอบ '{u_ans3}')")
 
         # ตรวจข้อ 4
-    if u_ans4 == "heart":
+    if u_ans4 == "rectangle":
         st.success("✅ ข้อ 4: ถูกต้อง")
         score += 1
     else:
         st.error(f"❌ ข้อ 4: ยังไม่ถูกต้อง (คุณตอบ '{u_ans4}')")
   # ตรวจข้อ 5
-    if u_ans5 == "dimon":
+    if u_ans5 == "semi circle":
         st.success("✅ ข้อ 5: ถูกต้อง")
         score += 1
     else:
@@ -102,23 +102,23 @@ st.divider()
 
 # 3. ช่องรับคำตอบ (ใช้ value ผูกกับตัวแปรตรงๆ เพื่อสั่งเคลียร์ได้)
 ans1 = st.text_input(
-    "ข้อ 1: An `a _ _ l e` a day keeps the doctor away. 🍎",
+    "ข้อ 1: when we foldinding the paper top and bottom corners of the opposite side meet what shape will we get `t r i____e` . 🔺",
     value=st.session_state.ans1_val,
 )
 ans2 = st.text_input(
-    "ข้อ 2: Cats love to eat `f _ s h`. 🐟",
+    "ข้อ 2: shape of the moon is `c _ _ _ l. e`. 🌕",
     value=st.session_state.ans2_val,
 )
 ans3 = st.text_input(
-    "ข้อ 3:In christmas fastival we always drop a glass of 'm _ _ _ k' and cookies for Santa Cluas. 🥛",
+    "ข้อ 3:shape of boxes is called 's _ _ _ r e'. ⬛️",
     value=st.session_state.ans3_val,
 )
 ans4 = st.text_input(
-    "ข้อ 4: When we went to school we always bringing a lot of `b _ _ k s`. 📚",
+    "ข้อ 4:sqaure's width is shorter than length `r e _ _ _ _ g _ _ `. ⬜️⬜️",
     value=st.session_state.ans4_val,
 )
 ans5 = st.text_input(
-    "ข้อ 5: When we went to school we always bringing a lot of `b _ _ k s`. 📚",
+    "ข้อ 5: harf of the full circle is `s e _ _ c i_ _ l _`. 🔵",
     value=st.session_state.ans5_val,
 )
 # อัปเดตค่าล่าสุดเข้าตัวแปร
