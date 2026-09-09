@@ -79,7 +79,7 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5):
 
     if score == 5:
         st.success("🎉 เก่งระดับเทพ")
-    else score == 1,2,3,4:
+    elif score in [1,2,3,4]:
         st.error("🤩 เกือบแล้วลองอีกรอบ") 
     except score == 0:
         st.error("💀 ลองใหม่อีกครั้ง")
