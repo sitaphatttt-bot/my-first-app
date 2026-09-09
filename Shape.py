@@ -78,9 +78,11 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5):
     st.info(f"🏆 ได้คะแนนรวม: {score} คะแนน")
 
     if score == 5:
-        st.success("🎉 You win!")
-    else:
-        st.error("💀 You lose!")
+        st.success("🎉 เก่งระดับเทพ")
+    else score == 0:
+        st.error("💀 ลองใหม่อีกครั้ง")
+    else score == 1,2,3,4:
+        st.error("🤩 เกือบแล้วลองอีกรอบ")
 
 
 # ----------------------------------------------------
